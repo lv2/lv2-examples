@@ -1,0 +1,22 @@
+# Copyright 2020-2022 David Robillard <d@drobilla.net>
+# SPDX-License-Identifier: 0BSD OR ISC
+
+Checks: >
+  *,
+  -*-magic-numbers,
+  -*-narrowing-conversions,
+  -*-uppercase-literal-suffix,
+  -altera-*,
+  -bugprone-easily-swappable-parameters,
+  -bugprone-macro-parentheses,
+  -cert-err33-c,
+  -hicpp-signed-bitwise,
+  -llvm-header-guard,
+  -llvmlibc-*,
+  -misc-unused-parameters,
+  -performance-no-int-to-ptr,
+  -readability-function-cognitive-complexity,
+  -readability-identifier-length,
+WarningsAsErrors: '*'
+HeaderFilterRegex: '.*'
+FormatStyle: file
