@@ -410,7 +410,7 @@ handle_event(Sampler* self, LV2_Atom_Event* ev)
       } else if (key == uris->param_gain) {
         // Gain change
         if (value->type == uris->atom_Float) {
-          self->gain_dB = ((LV2_Atom_Float*)value)->body;
+          self->gain_dB = ((const LV2_Atom_Float*)value)->body;
           self->gain    = DB_CO(self->gain_dB);
         }
       }
