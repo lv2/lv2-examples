@@ -1,0 +1,5 @@
+lv2-examples (0.0.1) unstable; urgency=medium
+
+  * Initial release as a separate project from LV2
+
+ -- David Robillard <d@drobilla.net>  Fri, 14 Nov 2025 01:57:45 +0000

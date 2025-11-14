@@ -1,0 +1,26 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: lv2-examples
+Upstream-Contact: David Robillard <d@drobilla.net>
+Source: https://gitlab.com/lv2/lv2-examples
+
+Files: NEWS
+Copyright: 2025 David Robillard <d@drobilla.net>
+Comment: Contributed to the Commons as a representation of simple facts
+License: 0BSD OR ISC
+
+Files: doc/style/*.css
+Copyright: Copyright 2020-2022 David Robillard <d@drobilla.net>
+License: ISC
+
+Files: plugins/README.txt plugins/**/README.txt
+Copyright: Copyright 2012-2016 David Robillard <d@drobilla.net>
+License: ISC
+
+Files: plugins/eg-sampler.lv2/click.wav
+Copyright: Copyright 2012 David Robillard <d@drobilla.net>
+License: ISC
+
+Files: lv2-examples.lv2/*.ttl plugins/**/*.ttl plugins/**/*.ttl.in
+Copyright: Copyright 2011-2025 David Robillard <d@drobilla.net>
+           Copyright 2013 Robin Gareus <robin@gareus.org>
+License: ISC

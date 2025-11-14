@@ -63,14 +63,15 @@ if not get_option('docs').disabled()
     )
 
     # Run asciidoc to generate book.html
+    style_dir = lv2_examples_source_root / 'doc' / 'style'
     book_html = custom_target(
       'book.html',
       build_by_default: true,
       command: [
         asciidoc,
-        '-a', 'stylesdir=' + lv2_source_root / 'doc' / 'style',
+        '-a', 'stylesdir=' + style_dir,
         '-a', 'source-highlighter=pygments',
-        '-a', 'pygments-style=' + lv2_source_root / 'doc' / 'style' / 'style.css',
+        '-a', 'pygments-style=' + style_dir / 'style.css',
         '-b', 'html',
         '-o', '@OUTPUT@',
         '@INPUT@',
