@@ -100,6 +100,14 @@ c_suppressions = cc.get_supported_arguments(c_suppressions)
 # LV2 Dependency #
 ##################
 
+# Only fall back to local subproject if this is the top project
+# (Workaround for older meson override bug)
+lv2_fallback = []
+if not meson.is_subproject()
+  lv2_fallback = ['lv2', 'lv2_dep']
+endif
+
+# Use the system LV2, or a stripped down local subproject
 lv2_dep = dependency(
   'lv2',
   default_options: [
@@ -113,7 +121,7 @@ lv2_dep = dependency(
     'tests=disabled',
     'tools=disabled',
   ],
-  fallback: ['lv2', 'lv2_dep'],
+  fallback: lv2_fallback,
   include_type: 'system',
   version: '>= 1.18.11',
 )
@@ -171,10 +179,7 @@ endif
 # Bundles #
 ###########
 
-# Bundle with metadata for this project
 subdir('lv2-examples.lv2')
-
-# Example plugin bundles
 subdir('plugins')
 
 ###########
