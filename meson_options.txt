@@ -15,6 +15,3 @@ option('plugins', type: 'feature',
 
 option('tests', type: 'feature',
        description: 'Build tests')
-
-option('title', type: 'string', value: 'LV2 Examples',
-       description: 'Project title')
