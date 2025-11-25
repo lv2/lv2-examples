@@ -80,6 +80,7 @@ elif cc.get_id() == 'gcc'
 elif cc.get_id() == 'msvc'
   c_suppressions += [
     '/wd4061', # enumerator in switch is not explicitly handled
+    '/wd4100', # unreferenced parameter
     '/wd4244', # conversion with possible loss of data
     '/wd4267', # conversion from size_t to a smaller type
     '/wd4310', # cast truncates constant value
