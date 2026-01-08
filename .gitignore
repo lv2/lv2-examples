@@ -3,5 +3,6 @@
 
 /.meson-subproject-wrap-hash.txt
 /build/
-/subprojects/packagecache/
+/subprojects/.wraplock
 /subprojects/lv2/
+/subprojects/packagecache/
