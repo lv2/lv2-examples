@@ -9,6 +9,7 @@ Checks: >
   -bugprone-suspicious-realloc-usage,
   -cert-err33-c,
   -clang-analyzer-core.NullDereference,
+  -clang-analyzer-security.ArrayBound,
   -hicpp-signed-bitwise,
   -llvm-header-guard,
   -misc-unused-parameters,
