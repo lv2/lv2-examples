@@ -14,7 +14,6 @@
 
 #include <stdbool.h>
 #include <stdint.h>
-#include <stdio.h>
 #include <stdlib.h>
 
 enum { FIFTHS_IN = 0, FIFTHS_OUT = 1 };
